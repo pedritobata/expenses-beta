@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --config ./jest.config.js"
   },
   "dependencies": {
-    "@types/node": "20.5.6",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "eslint": "8.47.0",
@@ -18,5 +18,13 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.2",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.4",
+    "@types/node": "^20.5.6",
+    "jest-environment-jsdom": "^29.6.4",
+    "ts-jest": "^29.1.1"
   }
 }

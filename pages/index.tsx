@@ -1,9 +1,18 @@
+import { useEffect } from 'react';
 import Head from 'next/head'
+import { useRouter } from 'next/router';
+
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace('/transactions');
+  }, []);
+
   return (
     <>
       <Head>
@@ -13,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${inter.className}`}>
-        <h1>Expenses tracker</h1>
+        <h1>Splash</h1>
       </main>
     </>
   )
